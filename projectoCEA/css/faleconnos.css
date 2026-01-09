@@ -1,0 +1,115 @@
+/* Variáveis para facilitar a manutenção de cores */
+:root {
+  --primary-color: #004aad; /* Azul institucional */
+  --accent-color: #ffcc00;  /* Amarelo para destaques */
+  --bg-color: #f4f7f6;
+  --text-dark: #2d3436;
+  --white: #ffffff;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --border-radius: 12px;
+  --transition: all 0.3s ease;
+}
+/* Estilização do Conteúdo/Formulário */
+main, .form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #636e72;
+}
+
+form {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 0.9rem;
+  gap: 8px;
+}
+
+input[type="text"], 
+textarea {
+  padding: 12px 15px;
+  border: 2px solid #edeff2;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(0, 74, 173, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botão de Envio (Adicionado para completar o form) */
+button[type="submit"], .btn-enviar {
+  background: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background: #003580;
+  transform: translateY(-2px);
+}
+
+/* Rodapé */
+footer {
+  padding: 40px 20px;
+  text-align: center;
+  background: #2d3436;
+  color: #dfe6e9;
+}
+
+footer a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+hr#linha {
+  color: blue;
+  margin-bottom: 100px;
+}
+
+hr#linha2 {
+  color: blue;
+  margin-bottom: -45px;
+}

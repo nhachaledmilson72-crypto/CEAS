@@ -1,0 +1,109 @@
+:root {
+    --primary: #004aad;
+    --accent: #ffcc00;
+    --gray-light: #f8f9fa;
+    --text: #333;
+    --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#edital {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.edital-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.edital-header h3 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* Container dos Cards */
+.universities-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.uni-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.uni-card:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+/* Cabeçalho do Acordeão */
+.uni-header {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.uni-header:hover {
+    background-color: var(--gray-light);
+}
+
+.arrow-icon {
+    font-style: normal;
+    font-size: 0.8rem;
+    transition: var(--transition);
+}
+
+/* Conteúdo Oculto */
+.uni-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+    background: var(--gray-light);
+}
+
+.subjects-list {
+    padding: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.subjects-list li {
+    padding: 8px 15px;
+    background: white;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    border-left: 4px solid var(--accent);
+}
+
+/* Classe Ativa para o JS */
+.uni-card.active .uni-content {
+    max-height: 500px; /* Valor alto o suficiente para o conteúdo */
+    border-top: 1px solid #eee;
+}
+
+.uni-card.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+.uni-card.active .uni-header {
+    background-color: var(--primary);
+    color: white;
+}

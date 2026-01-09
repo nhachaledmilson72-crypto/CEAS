@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Explicação CEAS</title>
+    <link rel="stylesheet" href="css/pacoteadmissao.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css">
+
+  </head>
+  <body>
+    <div id="borda">
+      <header>
+        <img src="imagem/IMG-20251214-WA00451.png" alt="" />
+        <div id="centro">
+          <h1>CEAS</h1>
+          <h2>CENTRO DE EXPLICAÇÃO AMOR AO SABER</h2>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li class="hideMobile"><a href="index.html">HOME</a></li>
+            <li class="hideMobile"><a href="inscrever.html">INSCREVER-SE</a></li>
+            <li class="hideMobile">
+              <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+            </li>
+            <li class="hideMobile">
+              <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+            </li>
+            <li class="hideMobile"><a href="faleconnos.html">FALE CONNOSCO</a></li>
+            <li class="hideDesktop" onclick="showSidebar()">
+              <a href="#"  style="background-color: rgba(240, 248, 255, 0);"
+                ><img
+                  src="imagem/menu.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul></nav><nav id="submenu">
+          <ul class="sidebar">
+            <li class="cor" onclick="hideSidebar()">
+              <a href="#"
+                ><img
+                  src="imagem/close.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="inscrever.html">INSCREVER-SE</a></li>
+            <li>
+              <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+            </li>
+            <li>
+              <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+            </li>
+            <li><a href="faleconnos.html">FALE CONNOSCO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr id="linha"/>
+      <div class="container-recursos">
+  <div class="card-interativo">
+    <button class="accordion" onclick="toggleAccordion(this)">
+      <span class="icon">📄</span> Editais
+    </button>
+    <div class="panel">
+      <ul>
+        <li><a href="links/uem_edital.pdf">UEM</a></li>
+        <li><a href="links/up_edital.pdf">UP</a></li>
+        <li><a href="links/iscam_edital.pdf">ISCAM</a></li>
+        <li><a href="links/ifp_edital.pdf">IFP</a></li>
+        <li><a href="links/iscisa_edital.pdf">ISCISA</a></li>
+        <li><a href="links/ujc_edital.pdf">UJC</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-interativo">
+    <button class="accordion" onclick="toggleAccordion(this)">
+      <span class="icon">📚</span> Brochuras
+    </button>
+    <div class="panel">
+      <ul>
+        <li><a href="links/uem_brochura.pdf">UEM</a></li>
+        <li><a href="links/up_brochura.pdf">UP</a></li>
+        <li><a href="links/ifp_brochura.pdf">IFP</a></li>
+        <li><a href="links/iscam_brochura.pdf">ISCAM</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card-interativo">
+    <button class="accordion" onclick="toggleAccordion(this)">
+      <span class="icon">📝</span> Exames Resolvidos
+    </button>
+    <div class="panel">
+      <ul>
+        <li><a href="#">UEM - Matemática 2024</a></li>
+        <li><a href="#">UP - Português 2024</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+      <hr id="linha2"/>
+      <footer>
+        <p>
+          Copyright &copy; 2025 - by Edmilson Nhachal
+          <br />
+          <a href="http://" target="_blank">Whatsapp</a> |
+          <a href="http://" target="_blank">Facebook</a> |
+          <a href="http://" target="_blank">Twitter</a>
+        </p>
+      </footer>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/pacotadmi.js"></script>
+    </div>
+  </body>
+</html>

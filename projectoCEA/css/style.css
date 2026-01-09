@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Onest:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #3498db;
+  --text-light: #ecf0f1;
+  --bg-light: #f4f7f6;
+}
+
+body {
+  body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha no topo (permite scroll) */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+}
+#borda {
+  background-color: white;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  margin: 0px;
+  box-sizing: border-box;
+  margin-top: -150px;
+  margin-right: -10px;
+}
+
+nav#menu a {
+  color: cadetblue;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px;
+  background-color: #cafce9;
+  transition: color 0.3s;
+  border-radius: 10px;
+}
+nav#menu a:hover {
+  color: rgb(38, 119, 38);
+}
+
+nav#submenu ul {
+  list-style: none;
+  display: none;
+  gap: 2px;
+}
+
+nav#submenu a {
+  text-decoration: none;
+  color: cadetblue;
+}
+nav#submenu a:hover {
+  color: rgb(38, 119, 38);
+}
+.sidebar {
+  position: fixed;
+  margin-top: 9px;
+  top: 0;
+  right: 0;
+  height: 60vh;
+  width: 280px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+  .hideMobile{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 660px) {
+  .hideDesktop{
+    display: none;
+  }
+}
+
+footer {
+  background: var(--primary-color);
+  color: cadetblue;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer a:hover {
+  color: green;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #3498db;
+}
+header h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: rgb(236, 182, 80);
+  font-family: "Google Sans Code", monospace;
+}
+
+div#centro {
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+hr#linha {
+  color: blue;
+  margin-bottom: 100px;
+}
+
+hr#linha2 {
+  color: blue;
+  margin-bottom: -45px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px; /* Formulário um pouco mais estreito que a borda */
+  margin: 0 auto; /* Centraliza o formulário dentro da borda */
+}

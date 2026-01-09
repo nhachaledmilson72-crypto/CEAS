@@ -1,0 +1,205 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ul#album-fotos li:hover {
+  -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+  opacity: 1;
+}
+
+ul#album-fotos li#foto01 {
+  background: url("../imagem/foto1.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto01:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto02 {
+  background: url("../imagem/foto2.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03 {
+  background: url("../imagem/foto3.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04 {
+  background: url("../imagem/foto4.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05 {
+  background: url("../imagem/foto5.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06 {
+  background: url("../imagem/foto6.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 400px 400px;
+  background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover {
+  background-position: 0px 0px;
+  background-size: 200px 200px;
+}
+/* Tipografia e Textos */
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: center;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section p a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+section p a:hover {
+    border-bottom: 2px solid #4a90e2;
+}
+
+/* Seção de Preços (Pricing) Modernizada */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #f9fbfd;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+    border-top: 5px solid #4a90e2;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+    text-align: left; /* Alinhamento interno dos cards */
+}
+
+/* Footer Moderno */
+footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+}
+
+footer a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+footer a:hover {
+    opacity: 1;
+}
+
+/* Ajuste global para evitar transbordamento */
+* {
+    box-sizing: border-box;
+}
+
+#borda {
+    width: 100%;
+    max-width: 1200px; /* Limita o tamanho em telas muito grandes */
+    margin: 0 auto;
+}
+
+/* Álbum de Fotos Responsivo */
+ul#album-fotos {
+    width: 100%; /* Mudado de 700px para 100% */
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; /* Substitui o float por Flexbox */
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+ul#album-fotos li {
+    /* Removido o float: left */
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid white;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in; /* Removido o prefixo -webkit para maior suporte */
+}
+
+/* Ajuste do Texto sobre a imagem */
+ul#album-fotos li span {
+    display: block; /* Garante que o span ocupe o espaço */
+    height: 100%;
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 10pt;
+    line-height: 180px; /* Ajustado para centralizar verticalmente no container de 200px */
+    text-align: center;
+    transition: opacity 0.3s;
+}

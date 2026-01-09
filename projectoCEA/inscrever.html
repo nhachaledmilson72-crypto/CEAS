@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centro de Explicação CEAS</title>
+  <link rel="stylesheet" href="css/inscrever.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/font.css" />
+</head>
+
+<body>
+  <div id="borda">
+    <header>
+      <img src="imagem/IMG-20251214-WA00451.png" alt="" />
+      <div id="centro">
+        <h1>CEAS</h1>
+        <h2>CENTRO DE EXPLICAÇÃO AMOR AO SABER</h2>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li class="hideMobile"><a href="index.html">HOME</a></li>
+          <li class="hideMobile">
+            <a href="inscrever.html">INSCREVER-SE</a>
+          </li>
+          <li class="hideMobile">
+            <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+          </li>
+          <li class="hideMobile">
+            <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+          </li>
+          <li class="hideMobile">
+            <a href="faleconnos.html">FALE CONNOSCO</a>
+          </li>
+          <li class="hideDesktop" onclick="showSidebar()">
+            <a href="#"  style="background-color: rgba(240, 248, 255, 0);"><img src="imagem/menu.svg" alt="" /></a>
+          </li>
+        </ul></nav><nav id="submenu">
+        <ul class="sidebar">
+          <li class="cor" onclick="hideSidebar()">
+            <a href="#"><img src="imagem/close.svg" alt="" /></a>
+          </li>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="inscrever.html">INSCREVER-SE</a></li>
+          <li>
+            <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+          </li>
+          <li>
+            <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+          </li>
+          <li><a href="faleconnos.html">FALE CONNOSCO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr id="linha" />
+    <div class="form-container">
+  <h2>Dados do Estudante</h2>
+  <form>
+    <div class="input-group">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" placeholder="Digite seu nome completo">
+    </div>
+
+    <div class="input-group">
+      <label>Sexo:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="sexo"> Feminino</label>
+        <label><input type="radio" name="sexo"> Masculino</label>
+      </div>
+    </div>
+
+    <div class="grid-inputs">
+      <div class="input-group">
+        <label>Número de BI:</label>
+        <input type="number">
+      </div>
+      <div class="input-group">
+        <label>Contacto:</label>
+        <input type="tel">
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Morada:</label>
+      <input type="text">
+    </div>
+
+    <div class="input-group">
+      <label>E-mail:</label>
+      <input type="email">
+    </div>
+
+    <div class="selection-section">
+  <p>Faça a sua escolha:</p>
+  <div class="button-toggle">
+    <button type="button" id="btn-cadeiras" onclick="toggleSelection('cadeiras', this)">Selecionar Cadeira</button>
+    <button type="button" id="btn-disciplinas" onclick="toggleSelection('disciplinas', this)">Selecionar Disciplina</button>
+  </div>
+</div>
+
+<div id="disciplinas" class="hidden">
+  <p>Seleccione as disciplinas nas quais deseja se inscrever:</p>
+  <div class="grid-display">
+    <label><input type="checkbox" name="disc" /> Português</label>
+    <label><input type="checkbox" name="disc" /> História</label>
+    <label><input type="checkbox" name="disc" /> Inglês</label>
+    <label><input type="checkbox" name="disc" /> Geografia</label>
+    <label><input type="checkbox" name="disc" /> Matemática</label>
+    <label><input type="checkbox" name="disc" /> Física</label>
+    <label><input type="checkbox" name="disc" /> Química</label>
+    <label><input type="checkbox" name="disc" /> Biologia</label>
+  </div>
+</div>
+
+<div id="cadeiras" class="hidden">
+  <p>Seleccione as cadeiras nas quais deseja se inscrever:</p>
+  <div class="grid-display">
+    <label><input type="checkbox" name="cad" /> Matemática Básica</label>
+    <label><input type="checkbox" name="cad" /> Geometria</label>
+    <label><input type="checkbox" name="cad" /> Topologia</label>
+    <label><input type="checkbox" name="cad" /> Álgebra Geral</label>
+    <label><input type="checkbox" name="cad" /> Matemática Discreta</label>
+    <label><input type="checkbox" name="cad" /> Análise Funcional</label>
+    <label><input type="checkbox" name="cad" /> Álgebra Linear</label>
+    <label><input type="checkbox" name="cad" /> Probabilidade</label>
+  </div>
+</div>
+
+<p style="margin-top: 20px;">
+  <button type="submit" class="submit-btn">Submeter</button>
+</p>
+    <hr id="linha2" />
+    <footer>
+      <p>
+        Copyright &copy; 2025 - by <strong>Edmilson Nhachal</strong>
+        <br />
+        <a href="http://" target="_blank">Whatsapp</a> |
+        <a href="http://" target="_blank">Facebook</a> |
+        <a href="http://" target="_blank">Twitter</a>
+      </p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/inscrever.js"></script>
+  </div>
+</body>
+
+</html>

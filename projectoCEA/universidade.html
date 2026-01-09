@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro de Explicação CEAS</title>
+    <link rel="stylesheet" href="css/universidade.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css">
+
+  </head>
+  <body>
+    <div id="borda">
+      <header>
+        <img src="imagem/IMG-20251214-WA00451.png" alt="" />
+        <div id="centro">
+          <h1>CEAS</h1>
+          <h2>CENTRO DE EXPLICAÇÃO AMOR AO SABER</h2>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li class="hideMobile"><a href="index.html">HOME</a></li>
+            <li class="hideMobile"><a href="inscrever.html">INSCREVER-SE</a></li>
+            <li class="hideMobile">
+              <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+            </li>
+            <li class="hideMobile">
+              <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+            </li>
+            <li class="hideMobile"><a href="faleconnos.html">FALE CONNOSCO</a></li>
+            <li class="hideDesktop" onclick="showSidebar()">
+              <a href="#"  style="background-color: rgba(240, 248, 255, 0);"
+                ><img
+                  src="imagem/menu.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          </nav><nav id="submenu">
+          <ul class="sidebar">
+            <li class="cor" onclick="hideSidebar()">
+              <a href="#"
+                ><img
+                  src="imagem/close.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="inscrever.html">INSCREVER-SE</a></li>
+            <li>
+              <a href="pacoteadmissao.html">PACOTE ADMISSÃO</a>
+            </li>
+            <li>
+              <a href="universidade.html">PACOTE UNIVERSIDADE</a>
+            </li>
+            <li><a href="faleconnos.html">FALE CONNOSCO</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr id="linha"/>
+      
+      <main id="edital">
+    <header class="edital-header">
+        <h3>Pacotes Universitários</h3>
+        <p>Explore as disciplinas que lecionamos por instituição</p>
+    </header>
+
+    <div class="universities-container">
+        <div class="uni-card">
+            <button class="uni-header" onclick="toggleAccordion(this)">
+                <span>UEM - Universidade Eduardo Mondlane</span>
+                <i class="arrow-icon">▼</i>
+            </button>
+            <div class="uni-content">
+                <ul class="subjects-list">
+                    <li>Topologia</li>
+                    <li>Equações Diferenciais</li>
+                    <li>Análise Funcional</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uni-card">
+            <button class="uni-header" onclick="toggleAccordion(this)">
+                <span>UP - Universidade Pedagógica</span>
+                <i class="arrow-icon">▼</i>
+            </button>
+            <div class="uni-content">
+                <ul class="subjects-list">
+                    <li>Matemática Básica</li>
+                    <li>Matemática Discreta</li>
+                    <li>Geometria Plana e Espacial</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="uni-card">
+            <button class="uni-header" onclick="toggleAccordion(this)">
+                <span>UJC - Universidade Joaquim Chissano</span>
+                <i class="arrow-icon">▼</i>
+            </button>
+            <div class="uni-content">
+                <ul class="subjects-list">
+                    <li>Estatística</li>
+                    <li>Informática</li>
+                    <li>Probabilidade</li>
+                    <li>Álgebra Linear</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+      <hr id="linha2"/>
+      <footer>
+        <p>
+          Copyright &copy; 2025 - by <strong>Edmilson Nhachal</strong>
+          <br />
+          <a href="http://" target="_blank">Whatsapp</a> |
+          <a href="http://" target="_blank">Facebook</a> |
+          <a href="http://" target="_blank">Twitter</a>
+        </p>
+      </footer>
+      <script src="scripts/script.js"></script>
+      <script src="scripts/univer.js"></script>
+    </div>
+  </body>
+</html>
